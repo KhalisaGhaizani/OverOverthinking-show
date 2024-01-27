@@ -1,0 +1,472 @@
+
+body{
+    background-color: #f7c22d;
+    background-image: url(images/uwp3567564.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0px;
+}
+#stuff{
+    display: flex;
+}
+#kiri {
+    width: 80%;
+    height: calc(100vh - 64px);
+    margin: 32px;
+    margin-right: 0px;
+    background-color: rgba(247,248,249, 0.94);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    float: left;
+    box-sizing: border-box;
+}
+#logo{
+    position:absolute;
+    top:0;
+    left: 0;
+    margin: 16px;
+    margin-left:32px;
+    color:#05213f;
+    font-family: 'Hubot-Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 1.67rem;
+}
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px;
+    margin-right: 32px;
+    margin-top: 24px;
+    cursor: pointer;
+  }
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #31bfa0;
+    margin-bottom: 4px;
+  }
+#logo span{
+    color: #31bfa0;
+}
+#selesai{
+    margin-top: 64px;
+    border-radius: 20px;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background: #bdd1e4; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #253d6c; 
+}
+.pertanyaan-selesai{
+    margin:32px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-family: "Inter",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #123756;
+}
+.jawaban{
+    margin:32px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: "Inter",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #353c43;
+}
+#input-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; 
+    width: calc(100% - 64px);
+    height:  100px;
+    margin: 32px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(255, 255, 255, 0.808);
+    border-radius: 10px;
+}
+#user-input{
+    flex: 1;
+    box-sizing: border-box; 
+    border: none;
+    border-radius: 4px;
+    margin: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 1.37rem;
+    font-family: "Inter",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:  normal;
+    font-weight: 400;
+    background-color: transparent;
+    color: rgb(73, 73, 115);
+}
+#user-input:focus {
+    outline: none;
+}
+#submit-btn{
+    width: 35px; 
+    height: 35px;
+    background-image: url('images/submitBtn.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    filter: grayscale(100%);
+    border: none;
+    cursor: pointer;
+    margin: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.pertanyaan{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    width: calc(100% - 64px);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: "Inter",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:  normal;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #123756;
+}
+#kanan {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: calc(100vh - 64px);
+    float:right;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    margin: 32px;
+    background-color: rgba(247,248,249, 0.94);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+#add{
+    margin: 32px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+#add img{
+    height: auto;
+    width: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+#sesi-baru-btn{
+    border: none;
+    background-color: transparent;
+    color: #271863;
+    font-size: 1.5rem;
+    font-family: "Inter",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:  normal;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    
+}
+#pilihan-sesi{
+    margin: 32px;
+    margin-top: 0;
+    flex-grow: 1;
+    overflow-y: auto; 
+} 
+.sesi-dan-hapus-satu{
+    display: flex;
+    align-items: center; 
+}
+.sesi-lain {
+    flex: 1;
+    width: 100%;
+    height: 46px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e2ba3f;
+    color:#05213f;
+    font-family: "Inter",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.sesi-lain:hover {
+    color:white;
+    background-color: #183153;
+    border-style: none;
+  }
+.hapus-satu{
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e2ba3f;
+    color: #611a0f;
+    font-family: 'Hubot-Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.hapus-satu:hover {
+    color:white;
+    background-color: #b33111;
+    border-style: none;
+  }
+.close-button {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .close-button:hover {
+    color: #000;
+  }
+  .blur-background {
+    filter: blur(8px);
+    pointer-events: none;
+  }
+  .show {
+    display: block !important;
+  }
+  .red-placeholder::placeholder {
+    color: rgb(194, 19, 136);
+  }
+@media(max-width: 1124px){
+    .hapus-satu{
+        font-size: 1.4rem;
+    }
+    .sesi-lain{
+        font-size: 0.9rem;
+    }
+}
+@media(max-width: 1091px){
+    .hapus-satu{
+        font-size: 1.3rem;
+    }
+    .sesi-lain{
+        font-size: 0.8rem;
+    }
+    #pilihan-sesi{
+        margin:16px
+    }
+    #sesi-baru-btn{
+        font-size:1.1rem ;
+    }
+    #add{
+        margin-bottom:0;
+    }
+}
+@media(max-width: 897px){
+    #kanan {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+        overflow-y: auto;
+        max-height: 80vh;
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        border-radius: 0px;
+        padding: 32px;
+      
+        animation: popUp 0.5s forwards;
+        transform-origin: center center;
+      }
+    #add{
+        margin-top:0;
+        margin-bottom: 0;
+    }
+    .hapus-satu{
+        font-size: 1.6rem;
+    }
+    .sesi-lain{
+        font-size: 1rem;
+    }
+    #kiri {
+        width: 100%;
+        margin: 32px;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .pertanyaan{
+        font-size: 2rem;
+    }
+    #input-container{
+        width: calc(100% - 64px);
+        height:  auto;
+        min-height: 10%;
+        margin: 32px;
+        border-radius: 10px;
+    }
+    #user-input{
+        border-radius: 4px;
+        margin: 16px;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    #submit-btn{
+        width: 30px; 
+        height: 30px;
+        margin: 32px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+     
+    }
+    #pilihan-sesi{
+        max-width:60%;
+        margin:0 auto;
+        margin-top: 32px;
+    }
+}
+@media(max-width:537px){
+    #user-input{
+        border-radius: 4px;
+        margin-right: 10px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    #submit-btn{
+        width: 25px; 
+        height: 25px;
+        margin-left: 8px;
+         
+    }
+}
+@media(max-width:457px){
+    #add{
+        margin: 5px;
+    }
+    #kiri{
+        margin: 0px;
+        border-radius: 0;
+        height: 100vh;
+        background-color: white;
+    }
+    body{
+        background-color: white;
+        background-image: none;
+    }
+    #input-container{
+        width: calc(100% - 64px);
+        height:  auto;
+        min-height: 10%;
+        margin: 32px;
+        border-radius:50px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    #user-input{
+        border-radius: 4px;  
+        margin: 16px;
+        margin-right: 8px;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    #submit-btn{
+        width: 20px; 
+        height: 20px;
+        margin: 16px;
+        margin-left:0;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    #logo{
+        font-size: 1rem;
+    }
+    .hamburger-menu {
+        margin-right: 32px;
+        margin-top: 18px;
+        cursor: pointer;
+    }
+    .hamburger-menu .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #31bfa0;
+        margin-bottom: 4px;
+    }
+    .pertanyaan{
+        font-size: 1.3rem;
+    }
+    #selesai{
+        margin-top: 46px;
+    }
+    .sesi-lain {
+        border-style: solid;
+        background-color: #ffffff;
+        font-size: 0.7rem;
+
+    }
+    .hapus-satu{
+        border-style: solid;
+        background-color: #ffffff;
+        color: #79281c;
+    }
+    .pertanyaan-selesai{
+        font-size: 1.2rem;
+    }
+    .jawaban{
+        font-size: 1rem;
+        color: #03121f;
+    }
+    #pilihan-sesi{
+        max-width: none;
+        width:auto;
+    }
+}
+@media(max-width:317px){
+    #user-input{
+        font-size: 0.7rem;
+    }
+    #submit-btn{
+        display: none;
+    }
+
+}

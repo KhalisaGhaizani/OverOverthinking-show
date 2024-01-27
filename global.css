@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("font/Inter-Thin.woff2?v=3.19") format("woff2"),
+         url("font/Inter-Thin.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("font/Inter-ExtraLight.woff2?v=3.19") format("woff2"),
+         url("font/Inter-ExtraLight.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("font/Inter-Light.woff2?v=3.19") format("woff2"),
+         url("font/Inter-Light.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("font/Inter-Regular.woff2?v=3.19") format("woff2"),
+         url("font/Inter-Regular.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("font/Inter-Medium.woff2?v=3.19") format("woff2"),
+         url("font/Inter-Medium.woff?v=3.19") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("font/Inter-SemiBold.woff2?v=3.19") format("woff2"),
+         url("font/Inter-SemiBold.woff?v=3.19") format("woff");
+  }
+
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("font/Inter-Bold.woff2?v=3.19") format("woff2"),
+         url("font/Inter-Bold.woff?v=3.19") format("woff");
+  }
+
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("font/Inter-ExtraBold.woff2?v=3.19") format("woff2"),
+         url("font/Inter-ExtraBold.woff?v=3.19") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("font/Inter-Black.woff2?v=3.19") format("woff2"),
+         url("font/Inter-Black.woff?v=3.19") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter var';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url("font/Inter-roman.var.woff2?v=3.19") format("woff2");
+  }
+  @font-face {
+    font-family: 'Hubot Sans';
+    src:
+      url('font/Hubot-Sans.woff2') format('woff2 supports variations'),
+      url('font/Hubot-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }

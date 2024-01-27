@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="sesi.css" />
+    <link rel="stylesheet" type="text/css" href="../global.css" />
+    <link rel="stylesheet" type="text/css" href="sesiAnimation.css" />
+    <script src="sesi.js" defer></script>
+    <title>Sesi</title>
+  </head>
+  <body>
+    <div id="stuff">
+      <div id="kiri">
+        <div class="header">
+          <p id="logo"><span id="blue-over">Over</span>Overthinking</p>
+        </div>
+        <div id="hamburger-menu" class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div id="selesai"></div>
+        <div id="sesi-tanya-jawab">
+          <p class="pertanyaan"></p>
+          <div id="input-container">
+            <input id="user-input" placeholder="Tulis jawaban anda di sini..."/>
+            <button id="submit-btn"></button>
+          </div>
+        </div>
+      </div>
+      <div id="kanan">
+        <button id="close-btn" class="close-button">&times;</button>
+        <div id="add">
+          <img src="images/plus.png" onclick="sesiBaru()">
+          <button id="sesi-baru-btn" onclick="sesiBaru()">Sesi Baru</button>
+        </div>
+        <div id="pilihan-sesi"></div>
+      </div>
+    </div>
+    
+  </body>
+</html>

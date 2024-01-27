@@ -1,0 +1,318 @@
+
+body{
+  overflow-x: hidden;
+}
+h1{
+  font-family: "Inter",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.34rem;
+}
+h2{
+  font-family: "Inter",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+p{
+  font-family: "Inter",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+  text-decoration: none;
+  color:rgb(133, 129, 161);
+}
+
+article p{
+  font-size: 1.17rem;
+  margin:0;
+}
+#pembuka div p {
+  font-size: 1.5rem;
+}
+  
+nav {
+  padding: 10px;
+  overflow: auto;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+  
+#logo {
+  float: left;
+  font-weight: bolder;
+  font-family: "Hubot-Sans",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.67;
+}
+#logo span{
+  color: #31bfa0;
+}
+#sumber {
+  font-size: 1.2rem;
+  float: right;
+  font-family: "Inter",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+  
+nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.3376rem;
+}
+  
+nav ul li:first-child {
+  margin-left: 0;
+}
+  
+main {
+  width: 85%;
+  padding: 10px;
+  margin: 0 auto;
+}
+  
+#pembuka {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 100px);
+  margin-bottom: 20px;
+}
+  
+#pembuka div {
+  flex: 1;
+  margin-right: 40px;
+}
+  
+#pembuka img {
+  flex: 1;
+  max-width: 50%;
+  min-width: 400px;
+  height: auto;
+  margin-left: 20px;
+  background: transparent;
+}
+
+#pembuka div p span{
+  font-weight: 600;
+}
+#mulai-sesi-btn{
+  background-color: #32c4a4;
+  color: #ffffff;
+  font-weight:600;
+  font-size: 1.3376rem;
+  width: 180px;
+  height:50px;
+  border-radius: 10px;
+  border-style: none;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  touch-action: manipulation;
+  cursor: pointer;
+} 
+#mulai-sesi-btn:hover {
+  background-color: #c43252;
+  color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transform: translateY(-2px);
+ }
+ 
+ #mulai-sesi-btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+ 
+article{
+  width: 90%;
+  margin: 0 auto;
+}
+article section{
+  display: flex; 
+  align-items: center;
+}
+article img{
+  min-width: 350px;
+  flex: 1;
+  max-width: 45%;
+}
+article div{
+  max-width: 50%;
+  line-height: 1.6;
+}
+.kiri{
+  margin-right: 1em;
+}
+.kanan{
+  margin-left: auto; 
+}
+@media(max-width:1027px){
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.7rem;
+    line-height: 1.3;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  article p{
+    font-size: 1rem;
+  }
+  #pembuka div p {
+    font-size: 1.2rem;
+  }
+  article img{
+    min-width: 300px;
+  }
+  #pembuka img{
+    min-width: 350px;
+  }
+}
+@media(max-width:863px) {
+  h1{
+    font-size: 1.65rem;
+  }
+  h2{
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  p{
+    font-size: 1.1rem;
+  }
+  article p{
+    font-size: 0.95rem;
+  }
+  #pembuka div p {
+    font-size: 1rem;
+  }
+  article img{
+    min-width: 250px;
+  }
+  #pembuka img{
+    min-width: 300px;
+  }
+}
+@media(max-width:770px) {
+  h1{
+    font-size: 1.6rem;
+  }
+  h2{
+    font-size: 1.74rem;
+    line-height: 1.3;
+  }
+  article p{
+    font-size: 0.95rem;
+  }
+  #pembuka div p {
+    font-size: 1.2rem;
+  }
+  #pembuka {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-bottom: 20px;
+    height: auto;
+  }   
+  #pembuka div{
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+  #pembuka img {
+    display: none;
+  }
+  article section {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 20px;
+  }
+  article img {
+    display:none;
+  }
+  article div {
+    border-style: solid;
+    max-width: none;
+    width: calc(100% - 40px);
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  #logo{
+    font-size: 1.3rem;
+  }
+  #sumber{
+    font-size: 1.2rem;
+  }
+  .kiri{
+    margin-right: 0;
+  }
+  .kanan{
+    margin-left: 0; 
+  }
+}
+@media(max-width:471px){
+  #logo{
+    font-size: 1.3rem;
+  }
+  article {
+    margin-top: 0;
+  }
+  #pembuka{
+    height: auto;
+  }
+}
+@media(max-width:337px){
+  #logo{
+    font-size: 1.2rem;
+  }
+  #sumber{
+    font-size: 1.1rem;
+  }
+  article {
+    margin-top: 0;
+  }
+  #pembuka{
+    height: auto;
+  }
+  img{
+    display: none;
+  }
+  h1{
+    font-size: 1.3rem;
+  }
+  h2{
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  article p{
+    font-size: 0.7rem;
+  }
+  #pembuka div p {
+    font-size: 1rem;
+  }
+  #mulai-sesi-btn{
+    font-weight:600;
+    font-size: 1.1rem;
+    width: 150px;
+    height:40px;
+  }
+}
+@media(max-width:310px){
+  #logo{
+    font-size: 1rem;
+  }
+  #sumber{
+    font-size: 0.9rem;
+  }
+}
+@media(min-width: 1445px){
+  img{
+    min-width: none;
+  }
+}
+
+  
